@@ -1,0 +1,769 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+
+    position: relative;
+
+    font-family: 'TheJamsil5Bold', sans-serif;
+}
+
+
+
+
+/* 스크롤바 */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    outline: none
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* .sec {
+    width: 100%;
+    height: 1000px;
+} */
+
+/* TOP 버튼 */
+.btn-moveTop {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+
+    border: 1px solid #000;
+    border-radius: 70px;
+    text-align: center;
+
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+
+    cursor: pointer;
+}
+
+
+/* --------- 헤더 -----------*/
+.header {
+    position: fixed;
+
+    width: 100%;
+    height: 80px;
+
+    font-size: 20px;
+
+    z-index: 99999;
+    background-color: #fff;
+}
+
+.h_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 80px;
+}
+
+.h_li {
+    width: 100%;
+    height: 100%;
+}
+
+.h_btn {
+    position: relative;
+
+    width: 100%;
+    height: 80px;
+
+    /* overflow: hidden; */
+    text-align: center;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.h_btn_txt {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    padding: 0;
+
+}
+
+.h_btn_txt span {
+    display: block;
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.h_btn_txt:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    content: attr(data-hover);
+    display: inline;
+    text-align: center;
+    -webkit-transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.h_btn_txt:hover {
+    color: #787878;
+}
+
+.h_btn_txt:hover span {
+    color: #787878;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.h_btn_txt:hover:after {
+    top: 0;
+}
+
+.h_btn_txt:active {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+
+
+/* scroll progress bar */
+.bar-bg {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+}
+
+.bar-ing {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+
+
+
+
+
+
+/* ---------sec1----------- 메인배너 */
+#sec1 {
+    height: 100vh;
+    padding-top: 80px;
+    text-align: center;
+    font-size: calc(8vw + 8vh);
+    letter-spacing: -.3vw;
+    font-family: "Lacquer" !important;
+    /* background-color: yellowgreen; */
+}
+
+.rugrats {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rugrats span {
+    display: inline-block;
+    transition: color linear 0.5s forwards;
+    -webkit-text-stroke-width: .32vw;
+    -webkit-text-stroke-color: black;
+    text-shadow: .4vw .5vw #000;
+}
+
+.rugrats span {
+    text-transform: capitalize;
+    text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------sec2----------- 어바웃미 */
+#sec2 {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+#sec2 h1 {
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.about_me {
+    display: flex;
+    height: 90%;
+}
+
+.desc {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    /* background-color: pink; */
+}
+
+.me {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: right;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    text-align: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+
+    /* background-color: skyblue; */
+}
+
+.p_box {
+    display: flex;
+    gap: 20px;
+}
+
+.p_name {
+    background-color: #000000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* ---------sec3----------- 내스킬*/
+
+#sec3 {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+#sec3 h1 {
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* ---------chart---------- */
+
+.chart_table {
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+
+    /* background-color: pink; */
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.chartrow {
+    width: 100%;
+    height: 50px;
+
+    border-radius: 40px;
+
+    background-color: #ddd;
+}
+
+.row_common {
+    width: 0;
+    height: 100%;
+
+    border-radius: 40px;
+
+    position: relative;
+}
+
+.row01 {
+    background-color: rgb(241, 154, 23);
+}
+
+.row02 {
+    background-color: skyblue;
+}
+
+.row03 {
+    background-color: yellow;
+}
+
+.row04 {
+    background-color: greenyellow;
+}
+
+.row05 {
+    background-color: pink;
+}
+
+.row06 {
+    background-color: teal
+}
+
+.row07 {
+    background-color: plum;
+}
+
+.row08 {
+    background-color: orangered;
+}
+
+.row_name {
+    line-height: 50px;
+    position: absolute;
+    left: 10px;
+
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.row_per {
+    position: absolute;
+    top: 15px;
+}
+
+
+
+
+/* ---------sec4----------- 포트폴리오*/
+#sec4 {
+    width: 100%;
+    height: 120vh;
+    padding-top: 80px;
+    /* background-color: black; */
+    margin-bottom: 350px;
+}
+
+#sec4 h1 {
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.port_wrap {
+    width: 100%;
+    height: 100%;
+    /* background-color: skyblue; */
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.port_box {
+    width: 1000px;
+    height: 600px;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.p_item {
+    width: 100%;
+    height: 600px;
+
+    /* overflow: hidden; */
+    position: relative;
+    overflow: hidden;
+
+    transition: all .5s;
+}
+
+.port1 img {
+    transition: all .5s;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.port1:hover>img {
+    transform: translateX(-50%) scale(1.2);
+    opacity: .3
+}
+
+.port1 {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #ddd;
+    /* background-color: orange; */
+}
+
+.port1_inner {
+    opacity: 0;
+    transition: all .5s;
+
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.port1_inner div {
+    margin-bottom: 10px;
+}
+
+.port1_body span {
+    font-size: 13px;
+}
+
+.port1:hover .port1_inner {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.port1_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #15363a;
+}
+
+.port1_sub_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0 20px;
+}
+
+#sec4 button {
+    margin: 20px;
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+
+.btn-3 {
+    line-height: 39px;
+    padding: 0;
+}
+
+.btn-3:hover {
+    background: transparent;
+    color: #000;
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+.port2 {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #ddd;
+    /* background-color: pink; */
+}
+
+.port2 img {
+    transition: all .5s;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.port2:hover>img {
+    transform: translateX(-50%) scale(1.1);
+    opacity: .3
+}
+
+.port2_inner {
+    opacity: 0;
+    transition: all .5s;
+
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.port2:hover .port2_inner {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.port2_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #15363a;
+}
+
+.port2_sub_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------sec5----------- 연락처 */
+#sec5 {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+#sec5 h1 {
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.commu_wrap {
+    width: 100%;
+    height: calc(100% - 80px);
+
+    padding-top: 10%;
+
+    display: flex;
+    justify-content: space-evenly
+}
+
+.c_item_box {
+    width: 300px;
+    height: 300px;
+
+    /* background-color: skyblue; */
+}
+
+.email_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.email_wrap>a>div {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.openchat_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.openchat_wrap>a>div {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.kakao_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kakao_wrap img {
+    width: 150px;
+    height: 150px;
+
+    margin-top: 15px;
+}
+
+.kakao_wrap div {
+    margin-top: 15px;
+}
+
+.con {
+    transform: translateY(120px);
+    opacity: 0;
+}
+
+.con_ac {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+/* ---------반응형----------- */
+
+@media screen and (max-width: 960px) {}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./index.js"></script>
+
+    <!-- 홈화면 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+
+    <title>김민희 포트폴리오</title>
+</head>
+
+<body>
+    <button onclick="moveToTop()" class="btn-moveTop">TOP</button>
+    <div class="wrap">
+        <div class="header">
+            <ul class="h_ul">
+                <li class="h_li">
+                    <a href="#sec1">
+                        <ul class="h_btn">
+                            <li class="h_btn_txt" data-hover="홈">
+                                <span>HOME</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="h_li">
+                    <a href="#sec2">
+                        <ul class="h_btn">
+                            <li class="h_btn_txt" data-hover="어바웃미">
+                                <span>ABOUT ME</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="h_li">
+                    <a href="#sec3">
+                        <ul class="h_btn">
+                            <li class="h_btn_txt" data-hover="스킬">
+                                <span>SKILLS</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="h_li">
+                    <a href="#sec4">
+                        <ul class="h_btn">
+                            <li class="h_btn_txt" data-hover="포트폴리오">
+                                <span>PORTFOLIO</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="h_li">
+                    <a href="#sec5">
+                        <ul class="h_btn">
+                            <li class="h_btn_txt" data-hover="연락">
+                                <span>CONTACT</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <div class="bar-bg">
+                <span class="bar-ing"></span>
+            </div>
+        </div>
+        <div class="sec" id="sec1">
+            <div class="rugrats">HELLO</div>
+            <div class="rugrats">MINHUI</div>
+            <div class="rugrats">WORLD</div>
+        </div>
+        <div class="sec" id="sec2">
+            <h1>ABOUT ME</h1>
+            <div class="about_me">
+                <div class="desc">
+                    <div class="me">
+                        <div class="me_desc">
+                            <h3>ABOUT ME</h3>
+                            <span>안녕하세요 늘 즐겁게 코딩하는 개발자 김민희입니다.<br>
+                                홈페이지를 제작할 때 웹표준 웹접근성을 고려하여<br>
+                                꼼꼼하게 제작하기 위해 늘 고민합니다.</span>
+                        </div>
+                        <div class="personal">
+                            <h3>PERSONALITY</h3>
+                            <span>사교성이 좋고 활발한 편입니다.<br>
+                                어딜가든 쉽게 적응하고<br>
+                                협업할 때 트러블 없이 함께 즐겁게 작업할 수 있습니다.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="profile_title">
+                        <h3>PROFILE</h3>
+                    </div>
+                    <div class="profile_desc">
+                        <div class="p_box">
+                            <div><span class="p_name">NAME</span></div>
+                            <div class="p_txt">김민희</div>
+                        </div>
+                        <div class="p_box">
+                            <div><span class="p_name">BIRTH</span></div>
+                            <div class="p_txt">1996.10.14</div>
+                        </div>
+                        <div class="p_box">
+                            <div><span class="p_name">EDUCATION</span></div>
+                            <div class="p_txt">
+                                <span>2022.03 ~ 2024.02</span><br>
+                                <span>오산대학교 컴퓨터소프트웨어과</span><br>
+                                <span>2024.01 ~ 2024.07</span><br>
+                                <span>공공데이터 융합 자바개발자 양성과정 A30(2)_1회차</span><br>
+                                <span>2024.03 ~ </span><br>
+                                <span>서울사이버대학교 컴퓨터공학과</span><br>
+                            </div>
+                        </div>
+                        <div class="p_box">
+                            <div><span class="p_name">CAREER</span></div>
+                            <div class="p_txt">
+                                <span>2016.09 ~ 2021.09</span><br>
+                                <span>삼성전자판매 갤럭시컨설턴트</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec" id="sec3">
+            <h1>SKILLS</h1>
+            <div class="chart_table">
+                <div class="chartrow">
+                    <div class="row_common row01">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name1">HTML</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row02">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name2">CSS</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row03">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name3">JS</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row04">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name4">jQuery</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row05">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name5">Mysql</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row06">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name6">Spring</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row07">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name7">Mybatis</div>
+                    </div>
+                </div>
+                <div class="chartrow">
+                    <div class="row_common row08">
+                        <div class="row_per">0</div>
+                        <div class="row_name r_name8">React</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec" id="sec4">
+            <h1>PORTFOLIO</h1>
+            <div class="port_wrap">
+                <div class="portfolio">
+                    <div class="port_box">
+                        <div class="p_item port1">
+                            <img src="./img/gentle.png" alt="">
+                            <div class="port1_inner">
+                                <div class="port1_title">Gentle Monster</div>
+                                <div class="port1_sub_title">Front / 개인</div>
+                                <div class="port1_body">
+                                    기존 젠틀몬스터 페이지 리뉴얼 했습니다.<br><br>
+                                    html / css / JS / JQuery
+                                    <br><br>
+                                    <span>기존 브랜드 사이트를 재해석하여 레이아웃, 기능들을 새롭게 리디자인 하는 식으로 포트폴리오 진행을 하였으며 기업과는 무관합니다.</span>
+                                    <br><br>
+                                </div>
+                                <div class="port1_time">작업기간 약 1주 소요</div>
+                                <button class="custom-btn btn-3">
+                                    <a href="https://min2mini.github.io/minhee/">
+                                        <span>More</span>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p_item port2">
+                            <img src="./img/메인큰페이지.png" alt="">
+                            <div class="port2_inner">
+                                <div class="port2_title">무한상사</div>
+                                <div class="port2_sub_title">Front & Back / Team</div>
+                                <div class="port2_body">
+                                    사내 인트라넷 페이지를 구현해보았습니다.<br><br>
+                                    html / css / JS / JQuery<br>
+                                    Spring / Mysql / Mybatis
+                                    <br><br>
+                                </div>
+                                <div class="port2_time">작업기간 약 2주 소요</div>
+                                <button class="custom-btn btn-3">
+                                    <a href="https://github.com/min2mini/muhan">
+                                        <span>github</span>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="sec" id="sec5">
+            <h1>CONTACT</h1>
+            <div class="commu_wrap">
+                <div class="con c_item_box">
+                    <div class="email_wrap">
+                        <a href="mailTo:gmldi0889@naver.com">
+                            <div class="email_icon">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg fill="#000000" height="150px" width="150px" version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 75.294 75.294" xml:space="preserve">
+                                    <g>
+                                        <path d="M66.097,12.089h-56.9C4.126,12.089,0,16.215,0,21.286v32.722c0,5.071,4.126,9.197,9.197,9.197h56.9
+            c5.071,0,9.197-4.126,9.197-9.197V21.287C75.295,16.215,71.169,12.089,66.097,12.089z M61.603,18.089L37.647,33.523L13.691,18.089
+            H61.603z M66.097,57.206h-56.9C7.434,57.206,6,55.771,6,54.009V21.457l29.796,19.16c0.04,0.025,0.083,0.042,0.124,0.065
+            c0.043,0.024,0.087,0.047,0.131,0.069c0.231,0.119,0.469,0.215,0.712,0.278c0.025,0.007,0.05,0.01,0.075,0.016
+            c0.267,0.063,0.537,0.102,0.807,0.102c0.001,0,0.002,0,0.002,0c0.002,0,0.003,0,0.004,0c0.27,0,0.54-0.038,0.807-0.102
+            c0.025-0.006,0.05-0.009,0.075-0.016c0.243-0.063,0.48-0.159,0.712-0.278c0.044-0.022,0.088-0.045,0.131-0.069
+            c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>이메일</div>
+                            <div>gmldi0889@naver.com</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="con c_item_box">
+                    <div class="openchat_wrap">
+                        <a href="https://open.kakao.com/o/sPIc5Yxg">
+                            <div class="openchat_icon">
+                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg fill="#000000" height="150px" width="150px" version="1.1" id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 90.191 90.191" xml:space="preserve">
+                                    <g>
+                                        <path d="M84.768,66.641c2.985-5.546,4.557-11.774,4.557-18.095c0-15.03-8.861-28.724-22.575-34.887
+		c-0.576-0.259-1.19-0.319-1.768-0.213c-6.814-6.284-15.908-10.13-25.887-10.13c-21.08,0-38.229,17.15-38.229,38.229
+		c0,6.32,1.572,12.549,4.556,18.095L0,79.874l19.827-5.314c2.353,1.376,4.839,2.477,7.408,3.316c0.197,0.5,0.522,0.958,0.985,1.304
+		c6.645,4.97,14.555,7.597,22.875,7.597c6.795,0,13.428-1.8,19.269-5.216l19.827,5.314L84.768,66.641z M20.782,68.093L8.485,71.389
+		l3.371-12.579l-0.628-1.08c-2.854-4.901-4.362-10.498-4.362-16.184c0-17.771,14.458-32.229,32.229-32.229
+		s32.229,14.458,32.229,32.229s-14.458,32.23-32.229,32.23c-6.104,0-12.052-1.723-17.202-4.98L20.782,68.093z M81.704,78.389
+		l-12.297-3.295l-1.111,0.703c-5.148,3.258-11.097,4.98-17.201,4.98c-2.931,0-5.794-0.409-8.551-1.164
+		c19.468-1.75,34.779-18.15,34.779-38.067c0-5.613-1.226-10.941-3.408-15.748c5.91,5.942,9.409,14.081,9.409,22.749
+		c0,5.686-1.509,11.282-4.362,16.184l-0.628,1.08L81.704,78.389z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>카카오톡 오픈채팅</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="con c_item_box">
+                    <div class="kakao_wrap">
+                        <img src="./img/KakaoTalk_logo.svg.png" alt="">
+                        <div>카카오톡 ID</div>
+                        <div>minhee0889</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // TOP 버튼
+    let moveToTop = function () {
+        document.body.scrollIntoView({ behavior: "smooth" });
+    };
+
+    // scroll bar
+    let scrollTop = 0;
+    let bar;
+
+    window.onload = function () {
+        bar = document.getElementsByClassName("bar-ing")[0];
+    };
+
+    window.addEventListener(
+        "scroll",
+        () => {
+            scrollTop = document.documentElement.scrollTop; // y축 방향으로 얼만큼 스크롤했는지
+            let per = Math.ceil(
+                (scrollTop / (document.body.scrollHeight - window.outerHeight)) * 100
+            );
+            bar.style.width = per + "%";
+        },
+        false
+    );
+</script>
+
+</html>
+
+
+                    
+
